@@ -1,0 +1,212 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Allied.Application</name>
+    </assembly>
+    <members>
+        <member name="T:Allied.Application.Controllers.BaseController`2">
+            <summary>
+            Class that implements the base controller.
+            </summary>
+            <typeparam name="TService">The type of the service.</typeparam>
+            <typeparam name="TEntity">The type of the entity.</typeparam>
+        </member>
+        <member name="F:Allied.Application.Controllers.BaseController`2._service">
+            <summary>
+            The service.
+            </summary>
+        </member>
+        <member name="M:Allied.Application.Controllers.BaseController`2.#ctor(Allied.Domain.Interface.Service.IBaseService{`1})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Allied.Application.Controllers.BaseController`2"/> class.
+            </summary>
+            <param name="service">The service.</param>
+        </member>
+        <member name="M:Allied.Application.Controllers.BaseController`2.Get">
+            <summary>
+            Lists all records.
+            </summary>
+            <returns>Return the records.</returns>
+        </member>
+        <member name="M:Allied.Application.Controllers.BaseController`2.Get(System.String)">
+            <summary>
+            Gets the entity by identifier.
+            </summary>
+            <param name="id">The identifier.</param>
+            <returns>Return the entity.</returns>
+        </member>
+        <member name="M:Allied.Application.Controllers.BaseController`2.Post(`1)">
+            <summary>
+            Insert the specified entity.
+            </summary>
+            <param name="entidade">The entidade.</param>
+            <returns>Return the id of entity.</returns>
+        </member>
+        <member name="M:Allied.Application.Controllers.BaseController`2.Put(`1)">
+            <summary>
+            Update the specified entity.
+            </summary>
+            <param name="entidade">The entity.</param>
+            <returns>Return the id of entity.</returns>
+            <exception cref="T:Allied.Domain.Validator.BusinessException`1">id - This field is required.</exception>
+        </member>
+        <member name="M:Allied.Application.Controllers.BaseController`2.Delete(System.String)">
+            <summary>
+            Delete the specified entity.
+            </summary>
+            <param name="id">The identifier.</param>
+        </member>
+        <member name="T:Allied.Application.Controllers.PhonePlanController">
+            <summary>
+            Class that implements the phoneplan controller.
+            </summary>
+        </member>
+        <member name="F:Allied.Application.Controllers.PhonePlanController._phonePlanService">
+            <summary>
+            The phoneplan service
+            </summary>
+        </member>
+        <member name="M:Allied.Application.Controllers.PhonePlanController.Post(Allied.Domain.Entity.PhonePlan)">
+            <summary>
+            Insert the specified plan.
+            </summary>
+            <param name="entidade">The entidade.</param>
+            <returns>Return the id of entity.</returns>
+        </member>
+        <member name="M:Allied.Application.Controllers.PhonePlanController.GetPlanByType(Allied.Domain.Enumerator.EnumTypePlan)">
+            <summary>
+            Gets the plan by type
+            </summary>
+            <param name="type">The type.</param>
+            <returns>Return the plan.</returns>  
+        </member>
+        <member name="M:Allied.Application.Controllers.PhonePlanController.GetByOperator(Allied.Domain.Enumerator.EnumOperatorPlan)">
+            <summary>
+            Gets the entity by identifier.
+            </summary>
+            <param name="operatorPlan">The operatorPlan.</param>
+            <returns>Return the plan.</returns>
+        </member>
+        <member name="M:Allied.Application.Controllers.PhonePlanController.GetByPlanCode(System.Int32)">
+            <summary>
+            Gets the entity by identifier.
+            </summary>
+            <param name="planCode">The planCode.</param>
+            <returns>Return the plan.</returns>
+        </member>
+        <member name="M:Allied.Application.Controllers.PhonePlanController.Delete(System.Int32)">
+            <summary>
+            Delete the specified entity.
+            </summary>
+            <param name="PlanCode">The identifier.</param>
+        </member>
+        <member name="T:Allied.Application.Middlewares.ExceptionMiddlewareExtensions">
+            <summary>
+            The extension of middleware exception.
+            </summary>
+        </member>
+        <member name="M:Allied.Application.Middlewares.ExceptionMiddlewareExtensions.ConfigureExceptionHandler(Microsoft.AspNetCore.Builder.IApplicationBuilder)">
+            <summary>
+            Configures the exception handler.
+            </summary>
+            <param name="app">The application.</param>
+        </member>
+        <member name="M:Allied.Application.Middlewares.ExceptionMiddlewareExtensions.GetErrorType(System.Exception)">
+            <summary>
+            Responsible to get the error type.
+            </summary>
+            <param name="exception">The exception.</param>
+            <returns>
+            Return the controlled return.
+            </returns>
+        </member>
+        <member name="M:Allied.Application.Middlewares.ExceptionMiddlewareExtensions.ErrorMessageException(System.Exception)">
+            <summary>
+            Errors the message exception.
+            </summary>
+            <param name="excecao">The excecao.</param>
+            <returns>Return the error message exception.</returns>
+        </member>
+        <member name="M:Allied.Application.Middlewares.ExceptionMiddlewareExtensions.ConvertInconsistencies(System.Collections.Generic.List{Allied.Domain.Validator.Inconsistency})">
+            <summary>
+            Converts the inconsistencies.
+            </summary>
+            <param name="listItem">The lista.</param>
+            <returns>Return the list of inconsistencies.</returns>
+        </member>
+        <member name="M:Allied.Application.Middlewares.ExceptionMiddlewareExtensions.SerializeWithIdentification(System.Object)">
+            <summary>
+            Serializes the with identification.
+            </summary>
+            <param name="objeto">The objeto.</param>
+            <returns>Return the json object.</returns>
+        </member>
+        <member name="M:Allied.Application.Program.Main(System.String[])">
+            <summary>
+            Defines the entry point of the application.
+            </summary>
+            <param name="args"></param>
+        </member>
+        <member name="M:Allied.Application.Program.CreateHostBuilder(System.String[])">
+            <summary>
+            Creates the host builder
+            </summary>
+            <param name="args">The arguments.</param>
+            <returns>Return the hos</returns>
+        </member>
+        <member name="T:Allied.Application.Startup">
+            <summary>
+            The startup class of application.
+            </summary>
+        </member>
+        <member name="M:Allied.Application.Startup.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Allied.Application.Startup"/>
+            </summary>
+            <param name="configuration"></param>
+        </member>
+        <member name="P:Allied.Application.Startup.Configuration">
+            <summary>
+            Gets the configuration
+            </summary>
+            <value>
+            The configuration.
+            </value>
+        </member>
+        <member name="M:Allied.Application.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Configures the services.
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="M:Allied.Application.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)">
+            <summary>
+            Configures the specified application.
+            </summary>
+            <param name="app">The application.</param>
+            <param name="env">The env.</param>
+        </member>
+        <member name="M:Allied.Application.Startup.RegisterDependencies(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Registers the dependencies.
+            </summary>
+            <param name="services">The services.</param>
+        </member>
+        <member name="M:Allied.Application.Startup.RegisterSwaggerData(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Registers the swagger data.
+            </summary>
+            <param name="services">The services.</param>
+        </member>
+        <member name="M:Allied.Application.Util.Util.ExecutarServicoSeguroComRetorno(System.Func{System.Object},System.String)">
+            <summary>
+            Executar servico seguro com retorno.
+            </summary>
+            <param name="execucao">A execucao.</param>
+            <param name="mensagemSucesso">A mensagem sucesso.</param>
+            <returns>
+            O retorno da execução.
+            </returns>
+        </member>
+    </members>
+</doc>

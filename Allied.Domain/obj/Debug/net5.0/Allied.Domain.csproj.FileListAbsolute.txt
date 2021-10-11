@@ -1,0 +1,12 @@
+C:\Desenvolvimento\Projetos\Github\Allied\Allied.Domain\bin\Debug\net5.0\Allied.Domain.deps.json
+C:\Desenvolvimento\Projetos\Github\Allied\Allied.Domain\bin\Debug\net5.0\Allied.Domain.dll
+C:\Desenvolvimento\Projetos\Github\Allied\Allied.Domain\bin\Debug\net5.0\ref\Allied.Domain.dll
+C:\Desenvolvimento\Projetos\Github\Allied\Allied.Domain\bin\Debug\net5.0\Allied.Domain.pdb
+C:\Desenvolvimento\Projetos\Github\Allied\Allied.Domain\obj\Debug\net5.0\Allied.Domain.csproj.AssemblyReference.cache
+C:\Desenvolvimento\Projetos\Github\Allied\Allied.Domain\obj\Debug\net5.0\Allied.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Desenvolvimento\Projetos\Github\Allied\Allied.Domain\obj\Debug\net5.0\Allied.Domain.AssemblyInfoInputs.cache
+C:\Desenvolvimento\Projetos\Github\Allied\Allied.Domain\obj\Debug\net5.0\Allied.Domain.AssemblyInfo.cs
+C:\Desenvolvimento\Projetos\Github\Allied\Allied.Domain\obj\Debug\net5.0\Allied.Domain.csproj.CoreCompileInputs.cache
+C:\Desenvolvimento\Projetos\Github\Allied\Allied.Domain\obj\Debug\net5.0\Allied.Domain.dll
+C:\Desenvolvimento\Projetos\Github\Allied\Allied.Domain\obj\Debug\net5.0\ref\Allied.Domain.dll
+C:\Desenvolvimento\Projetos\Github\Allied\Allied.Domain\obj\Debug\net5.0\Allied.Domain.pdb

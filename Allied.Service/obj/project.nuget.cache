@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "blWzuSty91MNgRy3DvoN277fU6pwyABnwSA151iLGCZbR+Uf19Ny9kYEcsnQJppopuLgtjAet1oza5cNUrWsAQ==",
+  "success": true,
+  "projectFilePath": "C:\\Desenvolvimento\\Projetos\\Github\\Allied\\Allied.Service\\Allied.Service.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\patri\\.nuget\\packages\\fluentvalidation\\10.3.3\\fluentvalidation.10.3.3.nupkg.sha512",
+    "C:\\Users\\patri\\.nuget\\packages\\fluentvalidation.aspnetcore\\10.3.3\\fluentvalidation.aspnetcore.10.3.3.nupkg.sha512",
+    "C:\\Users\\patri\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\10.3.3\\fluentvalidation.dependencyinjectionextensions.10.3.3.nupkg.sha512",
+    "C:\\Users\\patri\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\2.1.0\\microsoft.extensions.dependencyinjection.abstractions.2.1.0.nupkg.sha512",
+    "C:\\Users\\patri\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}
